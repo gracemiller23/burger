@@ -1,0 +1,83 @@
+body{
+    font-size: 16px;
+    background-color: lightseagreen;
+    color: white;
+}
+
+/* header styles */
+h1, h3{
+    text-align: center;
+}
+
+.headerImg{
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* display section styles */
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 4% 0;
+}
+
+.num {
+    font-weight: bold;
+}
+
+.wrapper{
+    display:block;
+    width:80%;
+    margin: 0 auto;
+    padding: 2%;
+    clear: both;
+}
+
+.col {
+    width: 49%;
+    display: block;
+    float: left;
+}
+
+
+/* form element and button styles */
+.create-form {
+    text-align:center;
+    background-color: turquoise;
+    border: 2px dotted white;
+    padding: 2%;
+}
+input{
+    width: 75%;
+    display:block;
+    margin: 1% auto;
+    min-height: 25px;
+}
+
+.devoured{
+ color: darkgray;
+}
+
+#submit-burger{
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: teal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .col {
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+}

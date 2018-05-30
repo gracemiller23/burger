@@ -1,0 +1,37 @@
+<div class="built-burgers">
+    <div class="wrapper">
+        <div class="not-devoured col">
+            <ul>
+                {{#each burgers}} {{#unless devoured}}
+                <li class="burger-list">
+                    <span class="num">{{id}}.</span> {{burger_name}} 
+                    <button type="button" class="devourbtn" value="{{id}}">Devour it!</button>
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
+        </div>
+        <div class="devoured col">
+            <ul>
+                {{#each burgers}} {{#if devoured}}
+                <li class="burger-list">
+                    <span class="num">{{id}}.</span> {{burger_name}}</li>
+                {{/if}} {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="wrapper build-your-burger">
+    <form class="create-form">
+        <div class="form-group">
+            <label for="new-burger">
+                <h3>Order Your Burger:</h3>
+            </label>
+            <p>Add the burger that sounds the best to you, then devour it!</p>
+
+            <input type="text" id="new-burger" name="name">
+        </div>
+
+        <button type="submit" id="submit-burger">Add Burger</button>
+    </form>
+</div>
